@@ -17,10 +17,10 @@ export default defineConfig({
     target: 'esnext',
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
+        main:'index.html',
       },
       output: {
-        dir: resolve(__dirname, 'dist'),
+        dir: 'dist',
       },
     },
   },
