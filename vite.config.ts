@@ -16,10 +16,12 @@ export default defineConfig({
     target: 'esnext',
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
+        // ✅ 修正點：直接使用相對路徑，讓 Vite 處理
+        main: './index.html',
       },
       output: {
-        dir: resolve(__dirname, 'dist'),
+        // 使用相對路徑，讓 Vite 確保輸出到專案根目錄下的 'dist'
+        dir: 'dist', 
       },
     },
   },
