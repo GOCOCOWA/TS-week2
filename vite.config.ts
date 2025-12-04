@@ -6,7 +6,6 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/TS-week2/',
   plugins: [vue(), vueDevTools()],
   resolve: {
     alias: {
@@ -17,12 +16,10 @@ export default defineConfig({
     target: 'esnext',
     rollupOptions: {
       input: {
-        // ✅ 修正點：直接使用相對路徑，讓 Vite 處理
-        main: './index.html',
+        main: resolve(__dirname, 'index.html'),
       },
       output: {
-        // 使用相對路徑，讓 Vite 確保輸出到專案根目錄下的 'dist'
-        dir: 'dist', 
+        dir: resolve(__dirname, 'dist'),
       },
     },
   },
