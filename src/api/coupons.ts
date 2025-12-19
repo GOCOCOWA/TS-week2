@@ -1,12 +1,10 @@
 import axios from 'axios'
 import type { AxiosResponse } from 'axios'
 import type {
-  GetCouponsResponse,
   CreateCouponParams,
   CreateCouponResponse,
   EditCouponParams,
-  EditCouponResponse,
-  DeleteCouponResponse,
+  GetCouponsResponse,
 } from '@/types/coupon'
 
 const BASE_URL = import.meta.env.VITE_BASE_URL
