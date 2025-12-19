@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { apiCreateCoupon, apiDeleteCoupon, apiEditCoupon, apiGetCoupons } from '@/api/coupons'
-import CouponModal from '@/components/Coupon.vue'
+import CouponModal from '@/components/CouponModal.vue'
 import DeleteModal from '@/components/DeleteModal.vue'
 import type { CouponData, Pagination } from '@/types/coupon'
 import { formatDate } from '@/utils/date'
