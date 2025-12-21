@@ -113,7 +113,7 @@ const deleteCoupon = async (couponId: string) => {
         <table class="table table-hover align-middle">
           <thead>
             <tr>
-              <th scope="col">優惠券標題</th>
+              <th scope="col">優惠券名稱</th>
               <th scope="col">優惠碼</th>
               <th scope="col">折扣</th>
               <th scope="col">截止日</th>
